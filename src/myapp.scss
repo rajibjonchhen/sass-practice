@@ -1,5 +1,27 @@
-$mycolor:#cc3333;
-
+$mycolor:#302d3a;
+$contrastColor:filter(100%);
+$borderColor:gray;
+.display-flex{
+    background-color: $mycolor;
+    display: flex;
+    
+}
 .text-color{
     color:$mycolor;
+    filter:invert(100%);
+}
+
+section{
+    flex:3;
+    padding:5px;
+    h2{color:red;}
+    p{color:white;}
+}
+
+aside{
+    flex:1;
+    border:3px solid $borderColor;
+    padding:5px;
+    h3{color:blue;}
+    p{color:white;}
 }

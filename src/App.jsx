@@ -1,24 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
 import "./myapp.scss"
+import { LoremIpsum, Avatar } from 'react-lorem-ipsum';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p className="text-color">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h1>Lets Practice SASS/SCSS</h1>
+      <div className="display-flex">
+        <section>
+          <h2>Nesting</h2>
+          <p className="text-color">text color using variable</p>
+          <p><LoremIpsum p={2}/></p>
+          <p><LoremIpsum p={2}/></p>
+          
+        </section>
+        <aside>
+          <h3>Nesting</h3>
+          <p><LoremIpsum p={1}/></p>
+        </aside>
+       
+      </div>
     </div>
   );
 }
