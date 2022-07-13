@@ -1,4 +1,4 @@
-@import "../../myapp_variables.scss";
+@import "../../../myapp_variables.scss";
 
 
 .jumbotron-img{
@@ -10,14 +10,13 @@
 }
 .jumbotron{
     display: flex;
-    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     padding:20px;
     background-color: $themeBackgroundTransparent;
-    width: 80%;
-    min-height: 400px;
-    margin: 100px auto 0;
+    width: 90%;
+    min-height: 500px;
+    margin: 60px auto;
     z-index: 10 !important;
     color: $themeBackgroundDark;
     font-size: 40px;

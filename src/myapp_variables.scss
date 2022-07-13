@@ -12,6 +12,10 @@ $themeWhite : white;
         color: $themeBackgroundDark;
         background:$themeWhite; 
     }
+    &:active{
+        box-shadow: 0 0 5px $themeWhite;
+        background:$themeWhite; 
+    }
 }
 
 @mixin btn-theme2{
@@ -22,13 +26,27 @@ $themeWhite : white;
         color: $themeWhite;
         background:$themeBackgroundDark; 
     }
+    &:active{
+        box-shadow: 0 0 5px $themeBackgroundDark;
+        background:$themeBackgroundDark;
+    }
 }
 
 @mixin theme-btn{
     border-radius: 15px;
     font-weight: bold;
     margin-left: 10px;
+    box-shadow: none !important;
     &:hover{
-                transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.theme-background{
+    background-color: $themeBackgroundDark;
+    color: $themeWhite;
 }

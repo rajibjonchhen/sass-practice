@@ -53,6 +53,7 @@ function MyNavbar() {
             <Button
             className="book-now-btn"
               href="https://da.fresha.com/a/natural-nails-kobenhavn-longangstraede-21-k7xden4l/booking"
+              target="_blank"
             >
               Book Now
             </Button>

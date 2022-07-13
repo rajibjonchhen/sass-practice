@@ -1,10 +1,12 @@
 import React from 'react'
-import Jumbotron from '../jumbotron/Jumbotron'
+import About from './about/About'
+import Jumbotron from './jumbotron/Jumbotron'
 
 function Home() {
   return (
     <div>
         <Jumbotron/>
+        <About/>
     </div>
   )
 }

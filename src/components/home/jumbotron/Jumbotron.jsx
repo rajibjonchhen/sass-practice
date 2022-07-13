@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button, Container } from 'react-bootstrap'
 import "./Jumbotron.scss"
-import Pedicure from "../../assets/pedicure.png"
+import Pedicure from "../../../assets/pedicure.png"
 
 function Jumbotron() {
   return (
@@ -10,6 +10,7 @@ function Jumbotron() {
             <img src={Pedicure} alt="pedicure background"/>
         </div>
         <div className="jumbotron">
+          <div>
             <p className="h1 jumbo-h1">
                 Welcome to Natural Nails
             </p>
@@ -17,6 +18,7 @@ function Jumbotron() {
             We care about your health and follow strict rules on disinfection and sterilisation of our equipment in UV sterilise machine to ensure that bacteria is eliminated
             </p>
             <Button className="learn-more-btn">Learn more</Button>
+          </div>
         </div>
         
     </div>
