@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -8,18 +8,21 @@ import "./MyNavbar.scss";
 import Brand from "../../assets/Screenshot 2022-07-13 at 01.06.21.png";
 
 function MyNavbar() {
+  const [navLocation, setNavLocation] = useState("/")
   const navLinkArray = [
-    { text: "Home", navLink: "/" },
-    { text: "Services & Price", navLink: "services" },
-    { text: "About Us", navLink: "about" },
-    { text: "Products", navLink: "products" },
-    { text: "Booking", navLink: "booking" },
-    { text: "Contact", navLink: "contact" },
+    { text: "Home", link: "/" },
+    { text: "Services & Price", link: "services" },
+    { text: "About Us", link: "about" },
+    { text: "Products", link: "products" },
+    { text: "Booking", link: "booking" },
+    { text: "Contact", link: "contact" },
   ];
 
-  const handleNavigate = () => {};
+  const handleNavigate = (changeLocation) => {
+    setNavLocation(changeLocation)
+  };
   return (
-    <Navbar collapseOnSelect expand="lg" className="theme-background" sticky="top">
+    <Navbar collapseOnSelect expand="lg" className="theme-background w-100" sticky="top">
       <Container>
         <Navbar.Brand className=" d-flex" href="#home">
           <div className="brand-img">
@@ -37,19 +40,18 @@ function MyNavbar() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ml-auto">
+          <Nav className="m-auto">
             {navLinkArray.map((navlink, i) => (
               <div
-                className="nav-link pointer"
-                onClick={() => handleNavigate("")}
+                className={`nav-link pointer ${navLocation === navlink.link? "border-bottom":""}`}
+                onClick={() => handleNavigate(navlink.link)}
               >
                 {navlink.text}
               </div>
             ))}
 
             <Button
-              
-              variant="outline-light"
+            className="book-now-btn"
               href="https://da.fresha.com/a/natural-nails-kobenhavn-longangstraede-21-k7xden4l/booking"
             >
               Book Now
