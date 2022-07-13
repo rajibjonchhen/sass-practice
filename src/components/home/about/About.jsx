@@ -8,7 +8,7 @@ function About() {
     <Container fluid className="theme-background d-flex">
       <Container className="p-5">
         <Row>
-          <Col sm={12} md={6} className="">
+          <Col sm={12} md={6} className="about-us">
             <h1>About Us</h1>
             <p>
               Step off the hectic street, walk into the relaxing place of
@@ -20,11 +20,13 @@ function About() {
               provide our service to client's individual needs and we aim to
               build up a base of loyal and loyal client.We offer a variety of
               treatments with moderate price, we paid attention to every aspect
-              of your visit. <br /> We believe that the customer always comes
-              first - and that means exceptional products and exceptional
-              services. Get in touch today to learn more about what we have to
-              offer.
+              of your visit.
             </p>
+              <p>
+                We believe that the customer always comes first - and that means
+                exceptional products and exceptional services. Get in touch
+                today to learn more about what we have to offer.
+              </p>
           </Col>
           <Col sm={12} md={6}>
             <img src={Store} alt="" width="100%" />
