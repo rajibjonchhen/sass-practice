@@ -2,26 +2,19 @@ import logo from './logo.svg';
 import './App.css';
 import "./myapp.scss"
 import { LoremIpsum, Avatar } from 'react-lorem-ipsum';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+import MyNavbar from './components/myNavbar/MyNavbar';
 
 function App() {
   return (
     <div className="App">
-        <h1>Lets Practice SASS/SCSS</h1>
-      <div className="display-flex">
-        <section>
-          <h2>Nesting</h2>
-          <p className="text-color">text color using variable</p>
-          <p><LoremIpsum p={2}/></p>
-          <p><LoremIpsum p={2}/></p>
-          
-        </section>
-        <aside>
-          <h3>Nesting</h3>
-          <p><LoremIpsum p={1}/></p>
-        </aside>
-       
-      </div>
+       <BrowserRouter>
+       <MyNavbar/>
+       <Routes>
+         
+       </Routes>
+       </BrowserRouter>
     </div>
   );
 }

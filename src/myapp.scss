@@ -1,21 +1,25 @@
-$mycolor:#302d3a;
+$myThemeColor:rgb(12,74,42);
 $contrastColor:filter(100%);
 $borderColor:gray;
+
 .display-flex{
-    background-color: $mycolor;
+    background-color: $myThemeColor;
     display: flex;
     
 }
 .text-color{
-    color:$mycolor;
+    color:$myThemeColor;
     filter:invert(100%);
 }
 
 section{
     flex:3;
     padding:5px;
+    cursor: pointer;
     h2{color:red;}
-    p{color:white;}
+    p{color:white;
+        &:hover{background-color:green}
+    }
 }
 
 aside{
