@@ -1,0 +1,34 @@
+$themeBackgroundLight:rgb(207,223,154);
+$themeBackgroundTransparent:rgb(207,223,154,0.5);
+$themeBackgroundDark:rgb(12,74,42);
+$themeWhite : white;
+
+
+@mixin btn-theme1{
+    color: $themeWhite;
+    background:transparent;
+    border: 1px solid $themeWhite;
+    &:hover{
+        color: $themeBackgroundDark;
+        background:$themeWhite; 
+    }
+}
+
+@mixin btn-theme2{
+    color:$themeBackgroundDark;
+    background:transparent;
+    border: 1px solid $themeBackgroundDark;
+    &:hover{
+        color: $themeWhite;
+        background:$themeBackgroundDark; 
+    }
+}
+
+@mixin theme-btn{
+    border-radius: 15px;
+    font-weight: bold;
+    margin-left: 10px;
+    &:hover{
+                transition: all 0.3s ease-in-out;
+    }
+}

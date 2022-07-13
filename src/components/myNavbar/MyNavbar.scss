@@ -1,5 +1,5 @@
-$themeBackgroundDark:rgb(12,74,42);
-$themeBackgroundLight:rgb(207,223,154);
+@import "../../myapp_variables.scss";
+
 
 .theme-background{
     background-color: $themeBackgroundDark;
@@ -37,16 +37,6 @@ $themeBackgroundLight:rgb(207,223,154);
 }
 
 .book-now-btn{
-    color:white;
-    background:transparent;
-    border: 1px solid white;
-    border-radius: 15px;
-    font-weight: bold;
-    margin-left: 10px;
-    &:hover{
-        color:$themeBackgroundDark;
-        background:$themeBackgroundLight;
-        border: 1px solid $themeBackgroundLight;
-        transition: all 0.3s ease-in-out;
-    }
+    @include btn-theme1;
+    @include theme-btn;
 }

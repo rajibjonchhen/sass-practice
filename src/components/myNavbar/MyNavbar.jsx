@@ -5,7 +5,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "./MyNavbar.scss";
-import Brand from "../../assets/Screenshot 2022-07-13 at 01.06.21.png";
+import Brand from "../../assets/brand.png";
 
 function MyNavbar() {
   const [navLocation, setNavLocation] = useState("/")
@@ -38,9 +38,9 @@ function MyNavbar() {
             </span>
           </div>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="m-auto">
+        <Navbar.Toggle  aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse  id="responsive-navbar-nav" >
+          <Nav   style={{marginLeft:"auto"}}>
             {navLinkArray.map((navlink, i) => (
               <div
                 className={`nav-link pointer ${navLocation === navlink.link? "border-bottom":""}`}

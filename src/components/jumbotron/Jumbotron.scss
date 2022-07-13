@@ -1,8 +1,41 @@
-$themeBackgroundLight:rgb(207,223,154);
+@import "../../myapp_variables.scss";
+
 
 .jumbotron-img{
-    background-image: url();
+    width: 100%;
+    top: -150px;
+    position: fixed;
+    z-index: -1;
+    margin:auto;
 }
 .jumbotron{
-    background-color: $themeBackgroundLight;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding:20px;
+    background-color: $themeBackgroundTransparent;
+    width: 80%;
+    min-height: 400px;
+    margin: 100px auto 0;
+    z-index: 10 !important;
+    color: $themeBackgroundDark;
+    font-size: 40px;
+    p{
+        color:$themeBackgroundDark;
+        font-size: 20px;
+        width: 70%;
+        margin: auto;
+    }
+    .h1{
+        width: 100%;
+        font-size: 72px;
+        font-weight:700 ;
+    }
+}
+
+.learn-more-btn{
+    @include btn-theme2;
+    @include theme-btn;
+
 }
