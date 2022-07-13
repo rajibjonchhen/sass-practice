@@ -6,11 +6,13 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "./MyNavbar.scss";
 import Brand from "../../assets/brand.png";
+import { useNavigate } from "react-router-dom";
 
 function MyNavbar() {
   const [navLocation, setNavLocation] = useState("/")
+  const navigate = useNavigate()
   const navLinkArray = [
-    { text: "Home", link: "/" },
+    { text: "Home", link: "" },
     { text: "Services & Price", link: "services" },
     { text: "About Us", link: "about" },
     { text: "Products", link: "products" },
@@ -20,11 +22,12 @@ function MyNavbar() {
 
   const handleNavigate = (changeLocation) => {
     setNavLocation(changeLocation)
+    navigate(`/${changeLocation}`)
   };
   return (
     <Navbar collapseOnSelect expand="lg" className="theme-background w-100" sticky="top">
       <Container>
-        <Navbar.Brand className=" d-flex" href="#home">
+        <Navbar.Brand className=" d-flex" href="#home" onClick={() => handleNavigate("")}>
           <div className="brand-img">
             <img src={Brand} alt="brand" style={{ width: "100%" }} />
           </div>
