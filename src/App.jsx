@@ -14,7 +14,7 @@ import About from './components/about/About';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App ">
        <BrowserRouter>
        
        <Routes>

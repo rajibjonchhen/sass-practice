@@ -5,7 +5,7 @@ import Pedicure from "../../../assets/pedicure.png"
 
 function Jumbotron() {
   return (
-    <div>
+    <div >
         <div className="jumbotron-img">
             <img src={Pedicure} alt="pedicure background"/>
         </div>

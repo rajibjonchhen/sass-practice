@@ -20,7 +20,7 @@ function ServiceCarousel() {
                 <Container >
                     <Row>
                     <Col sm={12} md={5} className="offset-md-1">
-                        <div style={{maxWidth:"300px"}}>
+                        <div className="m-auto" style={{maxWidth:"300px"}}>
                             <img src={item.img} alt="" width="100%"/>
                         </div>
                     </Col>

@@ -9,7 +9,7 @@ function NaturalNailsServices() {
     <Row>
       <Col sm={12} md={10} lg={8} className="offset-md-1 offset-lg-2">
       <h1>Natural-Nails Services</h1>
-      <p className="h3">
+      <p className="h3 lh-base">
         The small details make that big difference, thank you for trusting us to
         take care of you. Welcome you to right place as 
         </p>

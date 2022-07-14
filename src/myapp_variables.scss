@@ -1,7 +1,7 @@
 $themeBackgroundLight:rgb(207,223,154);
 $themeBackgroundTransparent:rgb(207,223,154,0.5);
 $themeBackgroundDark:rgb(12,74,42);
-$themeWhite : white;
+$themeWhite :rgb(247,247,247);
 
 
 @mixin btn-theme1{
@@ -59,4 +59,8 @@ $themeWhite : white;
 
 .theme-transparent-background{
     @include theme-transparent-background;
+}
+
+.theme-background-white{
+    background-color: $themeWhite;
 }
