@@ -2,11 +2,9 @@ import Service1 from "../../../assets/service1.png"
 import Service2 from "../../../assets/service2.png"
 import Service3 from "../../../assets/service3.png"
 import Service4 from "../../../assets/service4.png"
-import Service5 from "../../../assets/service5.png"
 export const carouselData = [
-    {img:<img src='Service1' alt="our service"/>,title:'1', text:''},
-    {img:<img src='Service2' alt="our service"/>,title:'2', text:''},
-    {img:<img src='Service3' alt="our service"/>,title:'3', text:''},
-    {img:<img src='Service4' alt="our service"/>,title:'4', text:''},
-    {img:<img src='Service5' alt="our service"/>,title:'5', text:''},
+    {img:Service1,title:'Manicure', text:'Hands are soaked in a warm, citrus milk bath aromatic. Nails are trim, file to shape, cuticle tidied with softening, hard skin around cuticle removed, buffed. Services are finished with a hot tower, relaxing hands with CND massage cream, followed by CND Solar Oils to hydrate nails. After manicure, clients achieve a healthy, beautiful hands look. We offer free CND Vinylux or CND Creative polish with colour of your choice.'},
+    {img:Service2,title:'Luxury Pedicure', text:'A truly transformative pedicure and food care solution. Food is soaked and cleaned in a warm, CND citrus milk bath, aromatic soaking, softening sea salt to soften skin. Toe nails are clipped, filed to shape, cuticle tidied with softening. A deep callus treatment applied> remove callus with professional tools, natural feet liquid applied, sugar scrub gently exfoliated all dry skin which will help smooth and hydrate skin on lower leg and feet. Pedicure ends with massage in CND hydrating lotion to give a soft, supple touch, followed by CND Solar Oils to hydrate toenails. We offer free CND Vinylux or CND creative polish with color of your choice. Recommended if you have a lot of callus under feet.'},
+    {img:Service3,title:'CND Shellac, CND Creative Play', text:'Nails are meticulously prepared to apply shellac. Nails are shaped, cuticle tidied, buffed and nails cleaned  and are finished with a hot tower. Clients chosen colour from CND Shellac or CND Creative Play, it will be applied professionally by skilled nails technicians. Service ends  relaxing in CND moisturising massage cream on hands, followed by cuticle  CND Solar Oils to hydrate your beautiful nails.'},
+    {img:Service4,title:'Acrylic - Nails Extension', text:'Traditional way of having long nails, different shapes without having to wait  a long time for them to grow. This is also the best way for the "Nails bitter" to get rid of that bad habit. Nails are shaped, cuticles are taken care of, nails enhancement will be sculpt with power to get your desired nails shape and length. Clients achieve a beauty, natural nails look, service will finish with hot tower CND moisturiser massage cream, followed  CND Solar Oils applied to hydrate your nails. We offer free CND by Vinylux polish or CND creative polish with colour of your choice.'},
 ]

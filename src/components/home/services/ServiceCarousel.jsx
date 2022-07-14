@@ -14,21 +14,25 @@ function ServiceCarousel() {
   };
 
     return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
-     {carouselData.map((item, i) =>  <Carousel.Item key={i}>
-        <Container>
-            <Row>
-            <Col>
-              {item.img}
-            </Col>
-            <Col>
-                <h3>{item.title} {i+1}</h3>
-                <p></p>
-            </Col>
-            </Row>
-        </Container>
-      </Carousel.Item>)}
-    </Carousel>
+       
+            <Carousel activeIndex={index} onSelect={handleSelect}>
+            {carouselData.map((item, i) =>  <Carousel.Item key={i}>
+                <Container >
+                    <Row>
+                    <Col sm={12} md={5} className="offset-md-1">
+                        <div style={{maxWidth:"300px"}}>
+                            <img src={item.img} alt="" width="100%"/>
+                        </div>
+                    </Col>
+                    <Col sm={12} md={5}>
+                        <h3>{item.title} {i+1}</h3>
+                        <p className='fs-5 text-justify lh-base'>{item.text}</p>
+                    </Col>
+                    </Row>
+                </Container>
+            </Carousel.Item>)}
+            </Carousel>
+        
     
   )
 }

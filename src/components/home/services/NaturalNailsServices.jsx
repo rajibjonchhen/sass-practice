@@ -1,17 +1,27 @@
 import React from "react";
+import { Col, Container, Row } from "react-bootstrap";
 import ServiceCarousel from "./ServiceCarousel";
 
 function NaturalNailsServices() {
   return (
-    <div className="">
-      <h2>Natural-Nails Services</h2>
-      <p>
+    <Container fluid className="bg-light p-5">
+       <Container className='theme-transparent-background p-5'>
+    <Row>
+      <Col sm={12} md={10} lg={8} className="offset-md-1 offset-lg-2">
+      <h1>Natural-Nails Services</h1>
+      <p className="h3">
         The small details make that big difference, thank you for trusting us to
-        take care of you. Welcome you to right place as WE LOVE WHAT WE DO and
+        take care of you. Welcome you to right place as 
+        </p>
+        <p className="h4 fw-bold">WE LOVE WHAT WE DO and
         WE DO IT WITH LOVE.
       </p>
+      </Col>
+    </Row>
+    <hr/>
       <ServiceCarousel/>
-    </div>
+       </Container>
+    </Container>
   );
 }
 

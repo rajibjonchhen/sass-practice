@@ -42,6 +42,10 @@ $themeWhite : white;
     }
 }
 
+@mixin theme-transparent-background {
+    background-color: $themeBackgroundTransparent;
+    color: $themeBackgroundDark;
+}
 .pointer{
     cursor: pointer;
 }
@@ -49,4 +53,10 @@ $themeWhite : white;
 .theme-background{
     background-color: $themeBackgroundDark;
     color: $themeWhite;
+}
+
+
+
+.theme-transparent-background{
+    @include theme-transparent-background;
 }
