@@ -11,7 +11,7 @@ function Jumbotron() {
         </div>
         <div className="jumbotron">
           <div>
-            <p className="h1 jumbo-h1">
+            <p className="jumbotron-h1">
                 Welcome to Natural Nails
             </p>
             <p>

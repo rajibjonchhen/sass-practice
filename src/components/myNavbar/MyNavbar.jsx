@@ -49,21 +49,23 @@ function MyNavbar() {
         <Navbar.Collapse  id="responsive-navbar-nav" >
           <Nav   style={{marginLeft:"auto"}}>
             {navLinkArray.map((navlink, i) => (
-              <div
+              <span
                 className={`nav-link pointer ${navLocation === navlink.link? "border-bottom":""}`}
                 onClick={() => handleNavigate(navlink.link)}
               >
                 {navlink.text}
-              </div>
+              </span>
             ))}
+          <span className="nav-link">
 
             <Button
             className="book-now-btn"
-              href="https://da.fresha.com/a/natural-nails-kobenhavn-longangstraede-21-k7xden4l/booking"
-              target="_blank"
+            href="https://da.fresha.com/a/natural-nails-kobenhavn-longangstraede-21-k7xden4l/booking"
+            target="_blank"
             >
               Book Now
             </Button>
+              </span>
           </Nav>
         </Navbar.Collapse>
       </Container>
