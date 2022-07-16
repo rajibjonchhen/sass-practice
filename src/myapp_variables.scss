@@ -1,5 +1,4 @@
 $themeBackgroundLight:rgb(207,223,154);
-$themeBackgroundTransparent:rgb(207,223,154,0.5);
 $themeBackgroundDark:rgb(12,74,42);
 $themeWhite :rgb(247,247,247);
 
@@ -43,7 +42,7 @@ $themeWhite :rgb(247,247,247);
 }
 
 @mixin theme-transparent-background {
-    background-color: rgba($themeBackgroundLight,0.5);
+    background-color: rgba($themeBackgroundLight,0.6);
     color: $themeBackgroundDark;
 }
 .pointer{
@@ -56,11 +55,14 @@ $themeWhite :rgb(247,247,247);
 }
 
 
-
-.theme-transparent-background{
-    @include theme-transparent-background;
-}
-
 .theme-background-white{
     background-color: $themeWhite;
+}
+
+.p-absolute{
+    position: absolute;
+}
+
+.p-relative{
+    position: relative;
 }

@@ -3,18 +3,18 @@ import { Col, Container, Row } from "react-bootstrap";
 
 function GetInTouch() {
   return (
-    <Container fluid className="bg-light p-5">
-        <Container className='theme-transparent-background p-5'>
+    <Container fluid className="bg-light p-2 p-md-5">
+        <Container className='theme-transparent-background p-2 p-md-5 '>
 
       <Row>
-        <Col>
+        <Col xs={6} sm={6} md={6} lg={4} className="m-auto">
           <img
             src="https://www.ekro.com/fileadmin/bedrijven/ekro/images/contact.jpg"
             alt=""
             width="100%"
             />
         </Col>
-        <Col>
+        <Col sm={8}  md={6} lg={8} className="m-auto">
           <ul className="list-unstyled">
             <li>Monday 10:00 - 18:30</li>
             <li>Tuesday 10:00 - 18:30</li>

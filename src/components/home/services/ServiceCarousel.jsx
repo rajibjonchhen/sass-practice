@@ -2,31 +2,41 @@ import React, { useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Carousel from 'react-bootstrap/Carousel';
 import {carouselData} from "./carouselData.js"
-import Service1 from "../../../assets/service1.png"
+import "./carousel.scss"
+
 
 
 function ServiceCarousel() {
   
+    const [showMore, setShowMore] = useState(false)
+    const [readText, setReadText] = useState("read more")
     const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
 
+  const handleReadText = () => {
+      setShowMore(!showMore)
+      setReadText(readText === "read more"? "read less":"read more")
+  }
+
     return (
        
             <Carousel activeIndex={index} onSelect={handleSelect}>
             {carouselData.map((item, i) =>  <Carousel.Item key={i}>
-                <Container >
+                <Container className="carousel-card">
                     <Row>
-                    <Col sm={12} md={6} className="w-100">
-                        <div className="m-auto" style={{width:"100%"}}>
-                            <img src={item.img} alt="" width="100%"/>
+                    <Col sm={12} md={6}  className="">
+                        <div className="carousel-img m-auto" style={{width:"100%", backgroundImage:`url(${item.img})`}}>
+                            {/* <img src={item.img} alt="" width="100%" height="100%"/> */}
                         </div>
                     </Col>
-                    <Col sm={12} md={5}>
-                        <h3>{item.title} {i+1}</h3>
-                        <p className='fs-5 text-justify lh-base'>{item.text} <span className="read-more">read more</span></p>
+                    <Col sm={12} md={6} >
+                        <div className=' pt-5 p-relative text-sm-start'>
+                        <p className="h4 p-4 text-decoration-underline p-absolute top-0">{item.title} {i+1}</p>
+                        <div className=' p-4 fs-5 text-start lh-base '><p className={`carousel-text ${!showMore? "carousel-text-wrap":""}`}>{item.text}</p> <span className="read-more" onClick={() => handleReadText() }>{readText}</span></div>
+                        </div>
                     </Col>
                     </Row>
                 </Container>
