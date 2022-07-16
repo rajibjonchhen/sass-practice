@@ -11,6 +11,7 @@ function GetInTouch() {
           <img
             src="https://www.ekro.com/fileadmin/bedrijven/ekro/images/contact.jpg"
             alt=""
+            width="100%"
             />
         </Col>
         <Col>

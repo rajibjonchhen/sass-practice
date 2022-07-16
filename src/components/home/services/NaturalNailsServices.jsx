@@ -5,7 +5,7 @@ import ServiceCarousel from "./ServiceCarousel";
 function NaturalNailsServices() {
   return (
     <Container fluid className="bg-light p-5">
-       <Container className='theme-transparent-background p-5'>
+       <Container className='theme-transparent-background p-md-5 p-sm-3'>
     <Row>
       <Col sm={12} md={10} lg={8} className="offset-md-1 offset-lg-2">
       <h1>Natural-Nails Services</h1>

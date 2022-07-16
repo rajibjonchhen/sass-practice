@@ -43,7 +43,7 @@ $themeWhite :rgb(247,247,247);
 }
 
 @mixin theme-transparent-background {
-    background-color: $themeBackgroundTransparent;
+    background-color: rgba($themeBackgroundLight,0.5);
     color: $themeBackgroundDark;
 }
 .pointer{

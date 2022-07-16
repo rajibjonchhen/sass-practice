@@ -1,4 +1,5 @@
 import React from 'react'
+import MyFooter from '../myFooter/MyFooter'
 import MyNavbar from '../myNavbar/MyNavbar'
 
 function MyLayout({children}) {
@@ -6,6 +7,7 @@ function MyLayout({children}) {
     <div>
         <MyNavbar/>
         {children}
+        <MyFooter/>
     </div>
   )
 }

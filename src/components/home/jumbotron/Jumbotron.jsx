@@ -7,7 +7,7 @@ function Jumbotron() {
   return (
     <div >
         <div className="jumbotron-img">
-            <img src={Pedicure} alt="pedicure background"/>
+            <img src={Pedicure} alt="pedicure background" width="100%"/>
         </div>
         <div className="jumbotron">
           <div>

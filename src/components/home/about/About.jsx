@@ -5,8 +5,8 @@ import Store from "../../../assets/store.png";
 
 function About() {
   return (
-    <Container fluid className="theme-background d-flex">
-      <Container className="p-5">
+    <Container fluid className="theme-background">
+      <Container className="py-5">
         <Row>
           <Col sm={12} md={6} className="about-us">
             <h1>About Us</h1>

@@ -3,11 +3,12 @@
 
 .jumbotron-img{
     width: 100%;
-    top: -470px;
+    top:-10px;
     position: fixed;
     z-index: -1;
     margin:auto;
 }
+
 .jumbotron{
     @include theme-transparent-background;
     display: flex;
@@ -20,8 +21,8 @@
     z-index: 10 !important;
     font-size: 40px;
     p{
-        color:$themeBackgroundDark;
         font-size: 20px;
+        color:$themeBackgroundDark;
         width: 70%;
         margin: auto;
     }
@@ -30,17 +31,41 @@
         font-size: 72px;
         font-weight:700 ;
     }
+    
 }
+
+
 
 .learn-more-btn{
     @include btn-theme2;
     @include theme-btn;
 }
 
-@media (max-width:576px) {
-    .jumbotron-h1{
-        font-size: 12px;
-    }
+
+
+@media only screen and (max-width:700px) {
+    .jumbotron {
+        margin: 40px auto;
+        min-height: 400px;
+        padding: 10px;
+        p{
+            font-size: 15px;
+        }
+        .jumbotron-h1{
+        font-size: 52px;
+    }}
+}
+
+@media only screen and (max-width:576px) {
+    .jumbotron {
+        width: 95%;
+        margin: 10px auto;
+        min-height: 200px;
+        padding: 10px;
+        .jumbotron-h1{
+        font-size: 22px;
+    }}
+
 }
 
 
