@@ -42,7 +42,7 @@ $themeWhite :rgb(247,247,247);
 }
 
 @mixin theme-transparent-background {
-    background-color: rgba($themeBackgroundLight,0.6);
+    background-color: rgba($themeBackgroundLight,0.5);
     color: $themeBackgroundDark;
 }
 .pointer{
@@ -54,6 +54,11 @@ $themeWhite :rgb(247,247,247);
     color: $themeWhite;
 }
 
+
+
+.theme-transparent-background{
+    @include theme-transparent-background;
+}
 
 .theme-background-white{
     background-color: $themeWhite;

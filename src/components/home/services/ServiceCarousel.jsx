@@ -33,9 +33,9 @@ function ServiceCarousel() {
                         </div>
                     </Col>
                     <Col sm={12} md={6} >
-                        <div className=' pt-5 p-relative text-sm-start'>
+                        <div className=' pt-5 p-relative text-start '>
                         <p className="h4 p-4 text-decoration-underline p-absolute top-0">{item.title} {i+1}</p>
-                        <div className=' p-4 fs-5 text-start lh-base '><p className={`carousel-text ${!showMore? "carousel-text-wrap":""}`}>{item.text}</p> <span className="read-more" onClick={() => handleReadText() }>{readText}</span></div>
+                        <div className=' p-4 fs-5  '><p className={`carousel-text ${!showMore? "carousel-text-wrap":""}`}>{item.text}</p> <span className="read-more" onClick={() => handleReadText() }>{readText}</span></div>
                         </div>
                     </Col>
                     </Row>

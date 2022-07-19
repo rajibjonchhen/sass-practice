@@ -4,12 +4,14 @@ import "./Jumbotron.scss"
 import Pedicure from "../../../assets/pedicure.png"
 
 function Jumbotron() {
-  return (
-    <div >
+  return (<>
         <div className="jumbotron-img">
-            <img src={Pedicure} alt="pedicure background" width="100%"/>
+            <img src={Pedicure} alt="pedicure background" width="100%" height="100%"/>
         </div>
-        <div className="jumbotron">
+    <Container fluid className='m-0 p-2 p-md-5 '>
+      <Container className="jumbotron">
+
+        <div >
           <div>
             <p className="jumbotron-h1">
                 Welcome to Natural Nails
@@ -20,8 +22,10 @@ function Jumbotron() {
             <Button className="learn-more-btn">Learn more</Button>
           </div>
         </div>
+      </Container>
         
-    </div>
+    </Container>
+    </>
   )
 }
 

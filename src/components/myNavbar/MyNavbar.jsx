@@ -45,7 +45,7 @@ function MyNavbar() {
             </span>
           </div>
         </Navbar.Brand>
-        <Navbar.Toggle  aria-controls="responsive-navbar-nav" />
+        <Navbar.Toggle  aria-controls="responsive-navbar-nav" class="navbar-toggler" />
         <Navbar.Collapse  id="responsive-navbar-nav" >
           <Nav   style={{marginLeft:"auto"}}>
             {navLinkArray.map((navlink, i) => (

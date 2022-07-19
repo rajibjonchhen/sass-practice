@@ -7,6 +7,8 @@
     position: fixed;
     z-index: -1;
     margin:auto;
+    overflow: hidden;
+    opacity: 1;
 }
 
 .jumbotron{
@@ -14,10 +16,8 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding:20px;
-    width: 90%;
     min-height: 500px;
-    margin: 60px auto;
+    // margin: 60px auto;
     z-index: 10 !important;
     font-size: 40px;
     p{
@@ -64,7 +64,13 @@
         padding: 10px;
         .jumbotron-h1{
         font-size: 22px;
-    }}
+        }
+    }
+    .jumbotron-img{
+        // min-height:400px !important;
+        top:100px;
+    }
+
 
 }
 
