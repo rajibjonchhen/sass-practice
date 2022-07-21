@@ -1,0 +1,21 @@
+.pointer {
+  cursor: pointer; }
+
+.theme-background {
+  background-color: #0c4a2a;
+  color: #f7f7f7; }
+
+.theme-transparent-background {
+  background-color: rgba(207, 223, 154, 0.5);
+  color: #0c4a2a; }
+
+.theme-background-white {
+  background-color: #f7f7f7; }
+
+.p-absolute {
+  position: absolute; }
+
+.p-relative {
+  position: relative; }
+
+/*# sourceMappingURL=contact.css.map */

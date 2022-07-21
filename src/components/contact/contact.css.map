@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AA+CA,QAAQ;EACJ,MAAM,EAAE,OAAO;;AAGnB,iBAAiB;EACb,gBAAgB,EAnDC,OAAa;EAoD9B,KAAK,EAnDI,OAAgB;;AAwD7B,6BAA6B;EAdzB,gBAAgB,EAAE,wBAA+B;EACjD,KAAK,EA5CY,OAAa;;AA6DlC,uBAAuB;EACnB,gBAAgB,EA7DP,OAAgB;;AAgE7B,WAAW;EACP,QAAQ,EAAE,QAAQ;;AAGtB,WAAW;EACP,QAAQ,EAAE,QAAQ",
+"sources": ["../../myapp_variables.scss"],
+"names": [],
+"file": "contact.css"
+}
