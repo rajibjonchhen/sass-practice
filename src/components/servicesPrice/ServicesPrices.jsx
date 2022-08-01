@@ -10,25 +10,25 @@ function ServicesPrices() {
         <Row className="min-height-90">
           <Col className="v-h-center">
             <div>
-                  <h1>Natural-Nails Services</h1>
-                  <p className="fs-5 w-75 m-auto">
+                  <h1 className="mb-5"><span className="border-bottom p-3">Natural-Nails Services</span></h1>
+                  <p className="fs-5 w-75 m-auto mt-3">
                     At Natural Nails, we work hard to provide & satisfy our guests
                     with a high quality and service in relaxation place. We have skill
                     technicians with professional Nails treatment: Manicure, Pedicure,
                     shellac, Acrylic.
                   </p>
-                  <p className="fs-5 w-75 m-auto">
+                  <p className="fs-5 w-75 m-auto mt-3">
                     Thank you to all our lovely loyal clients for your support over
-                    year! As ever, we want to provide the best products and safe
+                    year! <br/> As ever, we want to provide the best products and safe
                     service we can, so there will be a small price increase on
                     treatments due to increasing of materials and fix cost.
                   </p>
-                  <p className="fs-5 w-75 m-auto">
+                  <p className="fs-5 w-75 m-auto mt-3">
                     we would like to inform you that our price of services will change
                     from 1st May 2022 onwards We greatly appreciate your support and
                     hope you understand the need to implement the increase.
                   </p>
-                  <p className="fs-5 w-75 m-auto">
+                  <p className="fs-5 w-75 m-auto mt-3">
                     Lots of love
                     <br />
                     Hanna and Natural Nail team,
