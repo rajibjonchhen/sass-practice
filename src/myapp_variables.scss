@@ -98,3 +98,11 @@ $colorWhite :rgb(247,247,247);
     align-items: center;
     justify-content: center;
 }
+
+.border-bottom{
+    border-bottom: 1px solid $colorLight;
+}
+
+.border-top-1{
+    border-top: 1px solid $colorLight;
+}
