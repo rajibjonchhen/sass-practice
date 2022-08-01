@@ -45,11 +45,11 @@ function MyNavbar() {
             </span>
           </div>
         </Navbar.Brand>
-        <Navbar.Toggle  aria-controls="responsive-navbar-nav" class="navbar-toggler" />
+        <Navbar.Toggle  aria-controls="responsive-navbar-nav" className="navbar-toggler" />
         <Navbar.Collapse  id="responsive-navbar-nav" >
           <Nav   style={{marginLeft:"auto"}}>
             {navLinkArray.map((navlink, i) => (
-              <span
+              <span key={i}
                 className={`nav-link pointer ${navLocation === navlink.link? "border-bottom":""}`}
                 onClick={() => handleNavigate(navlink.link)}
               >

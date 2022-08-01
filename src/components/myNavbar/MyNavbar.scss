@@ -2,7 +2,7 @@
 
 
 .theme-background{
-    background-color: $themeBackgroundDark;
+    background-color: $colorDark;
 }
 
 .brand-name{
@@ -27,14 +27,14 @@
     font-weight: bold;
     margin: auto;
     &:hover{
-        color:$themeBackgroundLight !important;
+        color:$colorLight !important;
         transition: all 0.3s ease;
     }
 }
 
 .border-bottom{
-    border-bottom: 2px solid $themeBackgroundLight !important;
-    color:$themeBackgroundLight !important;
+    border-bottom: 2px solid $colorLight !important;
+    color:$colorLight !important;
 }
 
 .book-now-btn{

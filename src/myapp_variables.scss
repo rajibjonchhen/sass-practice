@@ -1,33 +1,33 @@
-$themeBackgroundLight:rgb(207,223,154);
-$themeBackgroundDark:rgb(12,74,42);
-$themeWhite :rgb(247,247,247);
+$colorLight:rgb(207,223,154);
+$colorDark:rgb(12,74,42);
+$colorWhite :rgb(247,247,247);
 
 
 @mixin btn-theme1{
-    color: $themeWhite;
+    color: $colorWhite;
     background:transparent;
-    border: 1px solid $themeWhite;
+    border: 1px solid $colorWhite;
     &:hover{
-        color: $themeBackgroundDark;
-        background:$themeWhite; 
+        color: $colorDark;
+        background:$colorWhite; 
     }
     &:active{
-        box-shadow: 0 0 5px $themeWhite;
-        background:$themeWhite; 
+        box-shadow: 0 0 5px $colorWhite;
+        background:$colorWhite; 
     }
 }
 
 @mixin btn-theme2{
-    color:$themeBackgroundDark;
+    color:$colorDark;
     background:transparent;
-    border: 1px solid $themeBackgroundDark;
+    border: 1px solid $colorDark;
     &:hover{
-        color: $themeWhite;
-        background:$themeBackgroundDark; 
+        color: $colorWhite;
+        background:$colorDark; 
     }
     &:active{
-        box-shadow: 0 0 5px $themeBackgroundDark;
-        background:$themeBackgroundDark;
+        box-shadow: 0 0 5px $colorDark;
+        background:$colorDark;
     }
 }
 
@@ -42,16 +42,21 @@ $themeWhite :rgb(247,247,247);
 }
 
 @mixin theme-transparent-background {
-    background-color: rgba($themeBackgroundLight,0.5);
-    color: $themeBackgroundDark;
+    background-color: rgba($colorLight,0.7);
+    color: $colorDark;
 }
 .pointer{
     cursor: pointer;
 }
 
 .theme-background{
-    background-color: $themeBackgroundDark;
-    color: $themeWhite;
+    background-color: $colorDark;
+    color: $colorWhite;
+}
+
+.theme-light-background{
+    background-color: $colorLight;
+    color: $colorDark;
 }
 
 
@@ -61,7 +66,7 @@ $themeWhite :rgb(247,247,247);
 }
 
 .theme-background-white{
-    background-color: $themeWhite;
+    background-color: $colorWhite;
 }
 
 .p-absolute{
@@ -70,4 +75,26 @@ $themeWhite :rgb(247,247,247);
 
 .p-relative{
     position: relative;
+}
+
+.min-height-70{
+    min-height: 70vh;
+}
+
+.min-height-80{
+    min-height: 80vh;
+}
+
+.min-height-90{
+    min-height: 90vh;
+}
+
+.min-height-100{
+    min-height: 100vh;
+}
+
+.v-h-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
