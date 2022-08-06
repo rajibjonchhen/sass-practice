@@ -19,7 +19,7 @@ function Jumbotron() {
             <p>
             We care about your health and follow strict rules on disinfection and sterilisation of our equipment in UV sterilise machine to ensure that bacteria is eliminated
             </p>
-            <Button className="learn-more-btn">Learn more</Button>
+            <Button className="theme2-btn">Learn more</Button>
           </div>
         </div>
       </Container>

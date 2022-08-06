@@ -4,7 +4,7 @@ import { Facebook, Linkedin, Twitter } from "react-bootstrap-icons";
 
 function MyFooter() {
   return (
-    <Container fluid className="theme-background p-3">
+    <Container fluid className="theme-bg p-3">
       <Row>
         <Col>
           <span className="m-3 p-3 fs-3">

@@ -12,7 +12,7 @@
 }
 
 .jumbotron{
-    @include theme-transparent-background;
+    @include theme-transparent-bg;
     display: flex;
     justify-content: flex-start;
     align-items: center;

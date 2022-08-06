@@ -8,7 +8,7 @@ function AboutUs() {
         <div className='bg-img-sticky' >
             <img className="" src="https://res.cloudinary.com/dai5duzoj/image/upload/v1659742800/hanna/Screenshot_2022-08-06_at_00.37.47_knov4v.png" alt="" width="100%" height="100%"/>
         </div>
-        <div className="theme-light-background min-height-80 p-5" >
+        <div className="theme-light-bg min-height-80 p-5" >
                 
             <Container>
                 <Row>

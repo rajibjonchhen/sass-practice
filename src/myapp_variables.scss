@@ -53,7 +53,7 @@ $colorWhite :rgb(247,247,247);
     }
 }
 
-@mixin theme-transparent-background {
+@mixin theme-transparent-bg {
     background-color: rgba($colorLight,0.7);
     color: $colorDark;
 }
@@ -81,23 +81,23 @@ $colorWhite :rgb(247,247,247);
     cursor: pointer;
 }
 
-.theme-background{
+.theme-bg{
     background-color: $colorDark;
     color: $colorWhite;
 }
 
-.theme-light-background{
+.theme-light-bg{
     background-color: $colorLight;
     color: $colorDark;
 }
 
 
 
-.theme-transparent-background{
-    @include theme-transparent-background;
+.theme-transparent-bg{
+    @include theme-transparent-bg;
 }
 
-.theme-background-white{
+.theme-bg-white{
     background-color: $colorWhite;
 }
 

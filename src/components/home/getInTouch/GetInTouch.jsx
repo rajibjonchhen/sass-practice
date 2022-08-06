@@ -5,7 +5,7 @@ import { Mailbox, Phone, Shop, Telephone } from "react-bootstrap-icons";
 function GetInTouch() {
   return (
     <Container fluid className="bg-light p-2 p-md-5">
-        <Container className='theme-transparent-background p-2 p-md-5 '>
+        <Container className='theme-transparent-bg p-2 p-md-5 '>
 
       <Row>
         <Col xs={12} sm={6} md={6} lg={6} className="m-auto h-100">

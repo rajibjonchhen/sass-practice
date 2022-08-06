@@ -3,7 +3,7 @@ import { Col, Container, Image, Row } from 'react-bootstrap'
 import Brand from "../../../assets/brand.png"
 function Promotion() {
   return (
-    <Container fluid className='theme-background p-2 p-md-5'>
+    <Container fluid className='theme-bg p-2 p-md-5'>
         <Container className='p-2 p-md-5'>
 
         <Row>

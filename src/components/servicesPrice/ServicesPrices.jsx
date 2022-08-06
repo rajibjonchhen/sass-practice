@@ -6,7 +6,7 @@ import "./ServicesPrices.scss";
 function ServicesPrices() {
   return (
     <div >
-      <Container className="theme-background">
+      <Container className="theme-bg">
         <Row className="min-height-90">
           <Col className="v-h-center">
             <div>
@@ -46,7 +46,7 @@ function ServicesPrices() {
                 <img src={item.img || "https://via.placeholder.com/550x350/350"} alt="" className="h-100 w-100"/>
               </div>
             </Col>
-            <Col sm={12} md={6} className="v-h-center theme-light-background">
+            <Col sm={12} md={6} className="v-h-center theme-light-bg">
               <ListGroup variant="flush" className="w-100 " >
               {item.services.map((service, j) => (
                   <ListGroup.Item key={j} className="d-flex w-100 justify-content-between theme-transparent-background">
