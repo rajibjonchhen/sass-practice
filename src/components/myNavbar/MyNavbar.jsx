@@ -29,7 +29,7 @@ function MyNavbar() {
     navigate(`/${changeLocation}`)
   };
   return (
-    <Navbar collapseOnSelect expand="lg" className="theme-background w-100" sticky="top">
+    <Navbar collapseOnSelect expand="lg" className="border-bottom theme-background w-100" sticky="top">
       <Container>
         <Navbar.Brand className=" d-flex" href="#home" onClick={() => handleNavigate("")}>
           <div className="brand-img">

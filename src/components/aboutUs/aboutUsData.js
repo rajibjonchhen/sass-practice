@@ -1,5 +1,5 @@
 export const aboutUsData =
   "Step off hectic street, walk in to the relaxing place of Natural Nails, located in the heart of Copenhagen. With many years nails care experience, we creative a homely and serene environment in which we could deliver our guest the best care and beauty expertise.The high quality of products, hygiene, friendly service, satisfaction of our guest care the top priority. we provide our service to client's individual needs and we aim to build up a base of loyal and loyalty client.We offer a variety of treatment with moderate price, we paid attention to every aspect of your visit. We believe that the customer always comes first - and that means exceptional products and exceptional services. Get in touch today to learn more about what we have to offer.";
-export const ourMission = "The properly done hands provide confidence to shake hands. We bring  that confidence in you with high quality products in safe environment that at a reasonable price";
+export const ourMission = "The properly done hands provide confidence to shake hands. We bring  that confidence in you with high quality products in safe environment at a reasonable price";
 
 export const ourVision = "We aspire to provide services in cozy, homely, healthy environment just like home with service minded staff bringing comfort to the guests.";

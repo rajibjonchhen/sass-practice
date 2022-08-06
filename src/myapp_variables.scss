@@ -9,11 +9,18 @@ $colorWhite :rgb(247,247,247);
     border: 1px solid $colorWhite;
     &:hover{
         color: $colorDark;
-        background:$colorWhite; 
+        background:$colorWhite;
+        border: 1px solid $colorWhite;
     }
+
     &:active{
         box-shadow: 0 0 5px $colorWhite;
-        background:$colorWhite; 
+        background-color:$colorWhite; 
+    }
+    &:focus{
+        color: $colorWhite;
+        background-color:none;
+        border: 1px solid $colorWhite;
     }
 }
 
@@ -23,11 +30,11 @@ $colorWhite :rgb(247,247,247);
     border: 1px solid $colorDark;
     &:hover{
         color: $colorWhite;
-        background:$colorDark; 
+        background-color:$colorDark; 
     }
     &:active{
         box-shadow: 0 0 5px $colorDark;
-        background:$colorDark;
+        background-color:$colorDark;
     }
 }
 
@@ -41,6 +48,9 @@ $colorWhite :rgb(247,247,247);
     &:hover{
         transition: all 0.3s ease-in-out;
     }
+    &:focus{
+        background-color:$colorDark;
+    }
 }
 
 @mixin theme-transparent-background {
@@ -48,7 +58,14 @@ $colorWhite :rgb(247,247,247);
     color: $colorDark;
 }
 
-
+@mixin bg-img{
+    width: 100%;
+    top:10px;
+    z-index: -1;
+    margin:auto;
+    overflow: hidden;
+    opacity: 1;
+}
 // global styles
 
 .theme1-btn{
@@ -122,12 +139,14 @@ $colorWhite :rgb(247,247,247);
     border-top: 1px solid $colorLight;
 }
 
-.background-img{
-    width: 100%;
-    top:-10px;
+
+
+.bg-img-fixed{
+    @include bg-img;
     position: fixed;
-    z-index: -1;
-    margin:auto;
-    overflow: hidden;
-    opacity: 1;
+}
+
+.bg-img-sticky{
+    @include bg-img;
+    position: sticky;
 }
