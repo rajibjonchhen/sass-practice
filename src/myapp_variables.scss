@@ -31,6 +31,8 @@ $colorWhite :rgb(247,247,247);
     }
 }
 
+
+
 @mixin theme-btn{
     border-radius: 15px;
     font-weight: bold;
@@ -45,6 +47,19 @@ $colorWhite :rgb(247,247,247);
     background-color: rgba($colorLight,0.7);
     color: $colorDark;
 }
+
+
+// global styles
+
+.theme1-btn{
+    @include btn-theme1;
+    @include theme-btn;
+}
+.theme2-btn{
+    @include btn-theme2;
+    @include theme-btn;
+}
+
 .pointer{
     cursor: pointer;
 }
@@ -105,4 +120,14 @@ $colorWhite :rgb(247,247,247);
 
 .border-top-1{
     border-top: 1px solid $colorLight;
+}
+
+.background-img{
+    width: 100%;
+    top:-10px;
+    position: fixed;
+    z-index: -1;
+    margin:auto;
+    overflow: hidden;
+    opacity: 1;
 }

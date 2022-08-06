@@ -5,7 +5,7 @@ import Pedicure from "../../../assets/pedicure.png"
 
 function Jumbotron() {
   return (<>
-        <div className="jumbotron-img">
+        <div className="background-img">
             <img src={Pedicure} alt="pedicure background" width="100%" height="100%"/>
         </div>
     <Container fluid className='m-0 p-2 p-md-5 '>
