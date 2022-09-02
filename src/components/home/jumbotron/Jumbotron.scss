@@ -4,6 +4,7 @@
 .jumbotron-img{
     width: 100%;
     top:-10px;
+    min-height: 500px;
     position: fixed;
     z-index: -1;
     margin:auto;
@@ -67,7 +68,7 @@
         }
     }
     .jumbotron-img{
-        // min-height:400px !important;
+        min-height:400px !important;
         top:100px;
     }
 

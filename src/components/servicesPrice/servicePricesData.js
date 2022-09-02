@@ -3,7 +3,8 @@ import {MdOutlineHotelClass, MdFolderSpecial} from "react-icons/md";
 import {VscSymbolColor} from "react-icons/vsc";
 
 const ServicePricesData=[
- {title:"Simple Services", icon: <GiFingernail/>, img:"https://res.cloudinary.com/dai5duzoj/image/upload/v1659357898/hanna/Screenshot_2022-08-01_at_13.43.30_b8hp2e.png",
+ {title:"Simple Services", icon: <GiFingernail/>, img:"https://res.cloudinary.com/dai5duzoj/image/upload/v1659961610/hanna/Screenshot_2022-08-01_at_13.43.30_b8hp2e.png",
+                                                        
 services:[
  {service:"Polish colour change on hands", price:"200"},
  {service:"Polish French change on hands", price:"250"},
