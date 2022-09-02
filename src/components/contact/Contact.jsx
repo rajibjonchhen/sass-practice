@@ -1,8 +1,11 @@
 import React from 'react'
+import GetInTouch from '../home/getInTouch/GetInTouch'
 
 function Contact() {
   return (
-    <div>Contact</div>
+    <div>
+      <GetInTouch/>
+    </div>
   )
 }
 
