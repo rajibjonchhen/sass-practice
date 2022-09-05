@@ -150,3 +150,7 @@ $colorWhite :rgb(247,247,247);
     @include bg-img;
     position: sticky;
 }
+
+.text-justified{
+    text-align: justify;
+}
